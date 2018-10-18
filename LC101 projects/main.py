@@ -6,10 +6,9 @@ from flask import Flask, request
 app = Flask(__name__)
 app.config['DEBUG'] = True
 
-form = """
-<!DOCTYPE html>
 
-<html>
+
+
     <head>
         <style>
             form {
@@ -27,20 +26,22 @@ form = """
             }
         </style>
     </head>
+    form = """
+<!DOCTYPE html>
+<html>
     <body>
         <form method="POST">
-            <label for "rot"> Rotate by:
-                <input type="text" name="rot" value="0"/>
-            </label>
+            <label for="rot">Rotate by:</label>
+                <input  type="text" name="rot" value="0"/>
+            
         <textarea> name="text">{0}</textarea>
         <input type ="submit"/>
         </form>
     </body>
 </html>
 """
-
 @app.route("/")
 def index():
-    return form.format("")
+    return form
 
 app.run()
