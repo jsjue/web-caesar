@@ -3,7 +3,8 @@
 from flask import Flask, request
 
 
-app = Flask(__name__)
+app = Flask(__name__)="main":
+    main()
 app.config['DEBUG'] = True
 
 
@@ -26,7 +27,7 @@ app.config['DEBUG'] = True
             }
         </style>
     </head>
-    form = """
+    form="""
 <!DOCTYPE html>
 <html>
     <body>
