@@ -3,8 +3,7 @@
 from flask import Flask, request
 
 
-app = Flask(__name__)="main":
-    main()
+app = Flask(__name__)
 app.config['DEBUG'] = True
 
 
