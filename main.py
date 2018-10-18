@@ -14,7 +14,7 @@ form = """
                 padding: 20px;
                 margin: 0 auto;
                 width: 540px;
-                font: 16px sans-serif;
+                <h1>font: 16px sans-serif;</h1>
                 border-radius: 10px;
             }}
             textarea{{
@@ -31,8 +31,8 @@ form = """
             <input type= "text" name = "rot" value = "0">
             <p class="error"></p>
         </div>
-        <textarea type ="text" name = "text">{0}
-        </textarea>
+        <textarea type ="text" name = "text">{0}</textarea>
+    
         <br>
         <input type = "Submit">
     </body>
